@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "dfd57c4ff75fd16cd358fd41b8cb968e"
-application_url = "https://cod-pork-wisconsin-guild.trycloudflare.com"
+application_url = "https://princeton-provisions-burlington-char.trycloudflare.com"
 embedded = true
 name = "ratings"
 handle = "ratings-6"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://cod-pork-wisconsin-guild.trycloudflare.com/auth/callback",
-  "https://cod-pork-wisconsin-guild.trycloudflare.com/auth/shopify/callback",
-  "https://cod-pork-wisconsin-guild.trycloudflare.com/api/auth/callback"
+  "https://princeton-provisions-burlington-char.trycloudflare.com/auth/callback",
+  "https://princeton-provisions-burlington-char.trycloudflare.com/auth/shopify/callback",
+  "https://princeton-provisions-burlington-char.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
