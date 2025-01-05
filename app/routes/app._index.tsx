@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import type { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
-import { useFetcher } from "@remix-run/react";
+import { useFetcher, useNavigate } from "@remix-run/react";
 import {
   Page,
   Layout,
@@ -29,11 +29,13 @@ export const action = async ({ request }: ActionFunctionArgs) => {
 
 export default function Index() {
   const fetcher = useFetcher<typeof action>();
+  const navigate = useNavigate();
  
   return (
     <Page>
       <TitleBar title="Rattings App"></TitleBar>
       <Text variant="heading3xl" as="h1">I am a beast</Text>
+      <Button onClick={() => {  navigate("/auth/login")  }}>Login</Button>
     </Page>
   );
 }
