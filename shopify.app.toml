@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "dfd57c4ff75fd16cd358fd41b8cb968e"
-application_url = "https://resorts-dimensions-persian-antibodies.trycloudflare.com"
+application_url = "https://tension-suffered-vat-terror.trycloudflare.com"
 embedded = true
 name = "ratings"
 handle = "ratings-6"
@@ -23,9 +23,9 @@ scopes = "write_products,unauthenticated_read_checkouts,unauthenticated_read_cus
 
 [auth]
 redirect_urls = [
-  "https://resorts-dimensions-persian-antibodies.trycloudflare.com/auth/callback",
-  "https://resorts-dimensions-persian-antibodies.trycloudflare.com/auth/shopify/callback",
-  "https://resorts-dimensions-persian-antibodies.trycloudflare.com/api/auth/callback"
+  "https://tension-suffered-vat-terror.trycloudflare.com/auth/callback",
+  "https://tension-suffered-vat-terror.trycloudflare.com/auth/shopify/callback",
+  "https://tension-suffered-vat-terror.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

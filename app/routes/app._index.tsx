@@ -33,9 +33,9 @@ export default function Index() {
  
   return (
     <Page>
-      <TitleBar title="Rattings App"></TitleBar>
-      <Text variant="heading3xl" as="h1">I am a beast</Text>
+      <TitleBar title="Ratings App"></TitleBar>
       <Button onClick={() => {  navigate("/auth/login")  }}>Login</Button>
+      <Button onClick={() => {  navigate("/user/register")  }}>Register</Button>
     </Page>
   );
 }
