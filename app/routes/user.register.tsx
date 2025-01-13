@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
-import { Form, useActionData, useLoaderData } from "@remix-run/react";
+import { Form, useActionData, useLoaderData, useNavigate } from "@remix-run/react";
 import {
   AppProvider as PolarisAppProvider,
   Button,
@@ -25,9 +25,9 @@ export async function action({
 
   try {
     let hashedPassword = await bcrypt.hash(body.get("password") as string, 10);
-    let userExists = await prisma.user.findFirst({where: { username: body.get("username") as string}});
+    let userExists = await prisma.user.findFirst({ where: { username: body.get("username") as string } });
 
-    if(userExists){
+    if (userExists) {
       return Response.json({ success: false, message: "User exists, try a different username." }, { status: 200 });
     }
 
@@ -52,14 +52,15 @@ export default function Register() {
   const [success, setSuccess] = useState(false);
   const [err, setErr] = useState("");
   const actionData = useActionData<typeof action>();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setErr("");
     setSuccess(false);
-    if (typeof actionData === 'object' &&  'success' in actionData && actionData.success) {
+    if (typeof actionData === 'object' && 'success' in actionData && actionData.success) {
       setSuccess(true);
     }
-    if (typeof actionData === 'object' &&  'success' in actionData && !actionData.success) {
+    if (typeof actionData === 'object' && 'success' in actionData && !actionData.success) {
       setErr(actionData.message);
     }
   }, [actionData])
@@ -93,19 +94,23 @@ export default function Register() {
                 onChange={setPassword}
                 autoComplete="off"
               />
-              <Button submit>Register</Button>
+              <div style={{ display: "flex", justifyContent: "flex-start", gap: "10px" }}>
+                <Button onClick={() => {navigate("/app")}}>Go Back</Button>
+                <Button submit>Register</Button>
+              </div>
+
             </FormLayout>
           </Form>
           <div style={{ marginTop: '10px', marginBottom: '10px' }}></div>
           {
-            success  ? (
+            success ? (
               <Banner title="Registration Successful" onDismiss={() => { setSuccess(false); }} tone="success">
                 <p>You have successfully registered a user account.</p>
               </Banner>
             ) : null
           }
-            {
-            err !== ""  ? (
+          {
+            err !== "" ? (
               <Banner title="Error" onDismiss={() => { setErr(""); }} tone="warning">
                 <p>{err}</p>
               </Banner>

@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "dfd57c4ff75fd16cd358fd41b8cb968e"
-application_url = "https://tension-suffered-vat-terror.trycloudflare.com"
+application_url = "https://connection-bp-score-delaware.trycloudflare.com"
 embedded = true
 name = "ratings"
 handle = "ratings-6"
@@ -19,13 +19,13 @@ api_version = "2025-01"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products,unauthenticated_read_checkouts,unauthenticated_read_customers"
+scopes = "write_products,unauthenticated_read_checkouts,unauthenticated_read_customers,read_product_listings"
 
 [auth]
 redirect_urls = [
-  "https://tension-suffered-vat-terror.trycloudflare.com/auth/callback",
-  "https://tension-suffered-vat-terror.trycloudflare.com/auth/shopify/callback",
-  "https://tension-suffered-vat-terror.trycloudflare.com/api/auth/callback"
+  "https://connection-bp-score-delaware.trycloudflare.com/auth/callback",
+  "https://connection-bp-score-delaware.trycloudflare.com/auth/shopify/callback",
+  "https://connection-bp-score-delaware.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
