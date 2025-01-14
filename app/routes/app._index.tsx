@@ -36,6 +36,7 @@ export default function Index() {
       <TitleBar title="Ratings App"></TitleBar>
       <Button onClick={() => {  navigate("/auth/login")  }}>Login</Button>
       <Button onClick={() => {  navigate("/user/register")  }}>Register</Button>
+      <Button onClick={() => {  navigate("/ratings")  }}>Ratings</Button>
     </Page>
   );
 }
