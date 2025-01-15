@@ -563,6 +563,10 @@ video {
   margin-top: 25px;
 }
 
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
 .flex {
   display: flex;
 }
@@ -571,8 +575,16 @@ video {
   display: contents;
 }
 
+.max-h-\[500px\] {
+  max-height: 500px;
+}
+
 .w-\[95\%\] {
   width: 95%;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-md {
@@ -590,4 +602,8 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
