@@ -158,14 +158,14 @@ export default function Ratings() {
             </Card>
 
           </Grid.Cell>
-          <Grid.Cell columnSpan={{ xs:  6, sm: 6, md: 6, lg: 6, xl: 6 }}>
+          <Grid.Cell columnSpan={{ xs: 6, sm: 6, md: 6, lg: 6, xl: 6 }}>
 
             <Card roundedAbove="sm">
-            
-                <div className="text-center">
+
+              <div className="text-center">
                 <Text variant="heading2xl" as="h3">User List</Text>
-                </div>
-                <div className="max-h-[500px] overflow-y-auto">
+              </div>
+              <div className="max-h-[500px] overflow-y-auto">
                 <List type="number">
                   {
                     users.length > 0 ? (

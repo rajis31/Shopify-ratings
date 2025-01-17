@@ -559,12 +559,12 @@ video {
   margin-right: auto;
 }
 
-.mt-\[25px\] {
-  margin-top: 25px;
-}
-
 .mt-\[20px\] {
   margin-top: 20px;
+}
+
+.mt-\[25px\] {
+  margin-top: 25px;
 }
 
 .flex {
