@@ -1,17 +1,9 @@
-import { useEffect } from "react";
+import Header from "app/components/index/header";
 import type { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
 import { useFetcher, useNavigate } from "@remix-run/react";
 import {
   Page,
-  Layout,
-  Text,
-  Card,
-  Button,
-  BlockStack,
-  Box,
-  List,
-  Link,
-  InlineStack,
+  Button
 } from "@shopify/polaris";
 import { TitleBar, useAppBridge } from "@shopify/app-bridge-react";
 import { authenticate } from "../shopify.server";
@@ -32,11 +24,17 @@ export default function Index() {
   const navigate = useNavigate();
  
   return (
-    <Page>
-      <TitleBar title="Ratings App"></TitleBar>
-      <Button onClick={() => {  navigate("/auth/login")  }}>Login</Button>
-      <Button onClick={() => {  navigate("/user/register")  }}>Register</Button>
-      <Button onClick={() => {  navigate("/ratings")  }}>Ratings</Button>
-    </Page>
+    <main className="bg-background text-foreground">
+      <Page>
+        <Header />
+        <TitleBar title="Ratings App"></TitleBar>
+        <div className="mt-[50px]">
+          <Button onClick={() => {  navigate("/auth/login")  }}>Login</Button>
+          <Button onClick={() => {  navigate("/user/register")  }}>Register</Button>
+          <Button onClick={() => {  navigate("/ratings")  }}>Ratings</Button>
+        </div>
+    
+      </Page>
+    </main>
   );
 }
