@@ -45,7 +45,7 @@ export default function Header() {
             <nav className="flex items-center gap-4 justify-end">
               <a
                 href="https://apps.shopify.com/dollar-discounts"
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow hover:from-primary/80 hover:to-primary/70 bg-gradient-to-b from-primary/90 to-primary/80 border-t-primary h-9 px-4 py-2"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow hover:from-primary/80 hover:to-primary/70 bg-gradient-to-b from-primary/90 to-primary/80 border-t-primary z-1 h-9 px-4 py-2"
               >
                 Get Started
               </a>
