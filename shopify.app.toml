@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "dfd57c4ff75fd16cd358fd41b8cb968e"
-application_url = "https://expo-heaven-sources-instructor.trycloudflare.com"
+application_url = "https://minimize-const-based-cad.trycloudflare.com"
 embedded = true
 name = "ratings"
 handle = "ratings-6"
@@ -23,9 +23,9 @@ scopes = "write_products,unauthenticated_read_checkouts,unauthenticated_read_cus
 
 [auth]
 redirect_urls = [
-  "https://expo-heaven-sources-instructor.trycloudflare.com/auth/callback",
-  "https://expo-heaven-sources-instructor.trycloudflare.com/auth/shopify/callback",
-  "https://expo-heaven-sources-instructor.trycloudflare.com/api/auth/callback"
+  "https://minimize-const-based-cad.trycloudflare.com/auth/callback",
+  "https://minimize-const-based-cad.trycloudflare.com/auth/shopify/callback",
+  "https://minimize-const-based-cad.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
