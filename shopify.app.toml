@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "dfd57c4ff75fd16cd358fd41b8cb968e"
-application_url = "https://uncle-monster-attached-compute.trycloudflare.com"
+application_url = "https://hawaiian-really-honest-vehicles.trycloudflare.com"
 embedded = true
 name = "ratings"
 handle = "ratings-6"
@@ -23,9 +23,9 @@ scopes = "write_products,unauthenticated_read_checkouts,unauthenticated_read_cus
 
 [auth]
 redirect_urls = [
-  "https://uncle-monster-attached-compute.trycloudflare.com/auth/callback",
-  "https://uncle-monster-attached-compute.trycloudflare.com/auth/shopify/callback",
-  "https://uncle-monster-attached-compute.trycloudflare.com/api/auth/callback"
+  "https://hawaiian-really-honest-vehicles.trycloudflare.com/auth/callback",
+  "https://hawaiian-really-honest-vehicles.trycloudflare.com/auth/shopify/callback",
+  "https://hawaiian-really-honest-vehicles.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

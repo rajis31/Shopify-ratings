@@ -14,9 +14,9 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".add-rating-btn").addEventListener("click", function () {
-      fetch("https://admin.shopify.com/store/codeinspire-app-dev-tutorial/apps/ratings-6/api/test")
+      fetch("https://hawaiian-really-honest-vehicles.trycloudflare.com/api/test")
       .then((res) => res.json())
-      .then((data) => setData(data.description))
+      .then((data) => console.log(data))
       .catch((error) => console.error("Error fetching API:", error));
     });
   });
