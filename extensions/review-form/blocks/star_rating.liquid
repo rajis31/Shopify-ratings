@@ -1,17 +1,8 @@
-{% assign avg_rating = block.settings.product.metafields.demo.avg_rating.value | round %}
-<span style="color:{{ block.settings.colour }}">
-  {% render 'stars', rating: avg_rating %}
-</span>
-{% if avg_rating >= 4 %}
-  <br>
-  <img src="{{ "thumbs-up.png" | asset_img_url: '15x' }}" height="15" width="15" loading="lazy">
-  {{ 'ratings.home.recommendationText' | t }}
-{% endif %}
-<p>I am gay</p>
+<button class="add-rating-btn">Add Rating</button>
 
 {% schema %}
 {
-  "name": "Star Rating",
+  "name": "Review Form",
   "target": "section",
   "settings": [
     { "type": "product", "id": "product", "label": "product", "autofill": true },
@@ -19,4 +10,16 @@
   ]
 }
 {% endschema %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".add-rating-btn").addEventListener("click", function () {
+      fetch("https://admin.shopify.com/store/codeinspire-app-dev-tutorial/apps/ratings-6/api/test")
+      .then((res) => res.json())
+      .then((data) => setData(data.description))
+      .catch((error) => console.error("Error fetching API:", error));
+    });
+  });
+</script>
+
 
