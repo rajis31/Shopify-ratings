@@ -20,7 +20,7 @@
       const appUrl = "{{ section.settings.app_url }}";
       console.log(appUrl);
       
-      fetch("https://cash-woods-secret-lake.trycloudflare.com/api/test")
+      fetch("/api/test")
       .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((error) => console.error("Error fetching API:", error));
